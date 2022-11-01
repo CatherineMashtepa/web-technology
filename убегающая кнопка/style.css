@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+    /*cursor: url('./img/cursor-ussual.png'), pointer;*/
+}
+
+.board {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(138, 207, 115);
+}
+
+.btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: 0.09s;
+
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: rgb(0, 0, 0, 0.35) 0 5px 15px;
+}
