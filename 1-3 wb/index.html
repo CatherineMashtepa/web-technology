@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Документ</title>
     <link href="index.css" rel="stylesheet" type="text/css">
+    <script src="./main.js"></script>
 </head>
 <body>
+    <div class="wrapper">
     <header>   
-        <button class="btn">Переключить тему</button>
-    <script src="./main.js"></script>
-        <div class="links">
-            <ul>
-                <br>
-                <li><a href="#desc">Описание</a></li>
-                <li><a href="#kadri">Кадры</a></li>
-                <li><a href="#actors">Актеры</a></li>
-                <li><a href="#actors">Можете оставить рецензию</a></li>
+          <div class="links">
+            <ul class="dws-ul">
+              <li class="dws-li" onclick="darkmode();">
+                <img src="moon.png" id="toggle-theme-image"></img>
+              </li>
+              <li class="dws-li"><a href="#desc"></i>Описание</a></li>
+              <li class="dws-li"><a href="#kadri"></i>Кадры</a></li>
+              <li class="dws-li-center"></li>
+              <li class="dws-li"><a href="#actors"></i>Актеры</a></li>
+              <li class="dws-li"><a href="#actors"></i>Отзыв</a></li>
             </ul>
-        </div>
+          </div>
     </header>
     <section>
         <a name="desc" id="main"></a>
@@ -38,7 +41,9 @@
         <video width="400" height="300" controls="controls" poster="видео.jpg">
         <source src="трейлер.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         </video>
-    </div>
+    </div> 
+    <br>
+    <br>
     <div id="aktery">
         <h3>Актёры:</h3>
         <a name="actors"></a>
@@ -68,15 +73,16 @@
         </aside>
     <footer class="footer">
         <div class="imag">
-            <img src="4.png"  width="100" height="100" >
+            <img src="4.png"  width="50" height="50" >
         </div>
         <div class="imag">
-            <img src="5.png"  width="100" height="100" >
+            <img src="5.png"  width="65" height="50" >
         </div>
         <div class="imag"></div>
-            <address><h6><br><br><br><br>сайт разработан cthrinma, Copyright 2022 &copy;</h6></address>
+        <div class="imag"><address><h6>сайт разработан cthrinma, Copyright 2022 &copy;</h6></address></div>
+            
         </div>
     </footer>
-
+    </div>
 </body>
 </html>
