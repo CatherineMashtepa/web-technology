@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документ</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+    <header>   
+          <div class="links">
+            <ul class="dws-ul">
+                <script src="./main.js"></script>
+              <li class="dws-li" onclick="darkmode();">
+                <img src="moon.png" id="toggle-theme-image"></img>
+              </li>
+              <li class="dws-li"><a href="#desc"></i>Описание</a></li>
+              <li class="dws-li"><a href="#kadri"></i>Кадры</a></li>
+              <li class="dws-li-center"></li>
+              <li class="dws-li"><a href="#actors"></i>Актеры</a></li>
+              <li class="dws-li"><a href="#actors"></i>Отзыв</a></li>
+            </ul>
+          </div>
+    </header>
+    <section>
+        <a name="desc" id="main"></a>
+        <h1>Остров проклятых</h1> <h6>«Some places never let you go» </h6>
+        <br>
+        <h5>Два американских судебных пристава отправляются на один из островов в штате Массачусетс, чтобы расследовать исчезновение пациентки клиники для умалишенных преступников. При проведении расследования им придется столкнуться с паутиной лжи, обрушившимся ураганом и смертельным бунтом обитателей клиники.</h5>
+        <br>
+        <a name="kadri" id="container">
+        <img src="1.webp" width="30%" >
+        <img src="2.webp" width="30%" >
+        <img src="3.webp" width="30%" >
+        </a>
+    </section>
+    <br>
+    <div class="video">
+        <video width="400" height="300" controls="controls" poster="видео.jpg">
+        <source src="трейлер.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        </video>
+    </div> 
+    <br>
+    <br>
+    <div id="aktery">
+        <h3>Актёры:</h3>
+        <a name="actors"></a>
+        <ol class="container">
+            <li>Леонардо Ди Каприо
+                <h6>Teddy Daniels</h6>
+            </li> <br>
+            <li>Марк Руффало </li>
+            <h6>Chuck Aule</h6> <br>
+            <li>Бен Кингсли </li>
+            <h6>Dr. Cawley</h6> <br>
+            <li>Патриша Кларксон</li>
+            <h6>Rachel 2</h6>
+        </ol>
+    </div> <br>
+        <aside>
+            <!-- <label for="email">Адрес почты</label>  -->
+            <input type="email" name="email" id="email" placeholder="Ваша почта"> <br>
+            <!--<label for="tel">Номер телефона</label> -->
+            <input type="tel" name="tel" id="tel" placeholder="Ваш телефон"> <br>
+            Можете оставить рецензию:
+            <textarea cols="20"></textarea>
+        <form action="" method="get">
+            <input type="submit" value="отправить вопрос">
+            <input type="reset" value="очистить">
+           </form>
+        </aside>
+    <footer class="footer">
+        <div class="imag">
+            <img src="4.png"  width="50" height="50" >
+        </div>
+        <div class="imag">
+            <img src="5.png"  width="65" height="50" >
+        </div>
+        <div class="imag"></div>
+        <div class="imag"><address><h6>сайт разработан cthrinma, Copyright 2022 &copy;</h6></address></div>
+            
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
