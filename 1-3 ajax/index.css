@@ -5,11 +5,12 @@ and (min-width : 1224px) {
 
 body{
   background: white;
-  transition: all .3s ease;
+  transition: all .5s ease;
 }
 .dark-mode{
   color: white;
   background: linear-gradient(#EECFBA, #C5DDE8);
+  transition: all .7s ease;
 }
 
 .dark-mode section {
@@ -17,6 +18,15 @@ body{
 }
 .dark-mode h1{
   color: black;
+}
+
+.dark-mode h5{
+  color: black;
+}
+h5{
+  text-indent: 30px;
+  font-size: 20px;
+  padding-bottom: 5px;
 }
 h1{
   color: wheat;
@@ -58,6 +68,11 @@ body {
 
 section {
   padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#text {
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -129,25 +144,23 @@ aside {
     background-color: rgb(179, 177, 177);
     border: 5px solid black;
   }
-  body { background: -moz-repeating-linear-gradient(black, 90%,white);
-      font-family: Georgia, "Times New Roman",
-            Times, serif;
-            font-stretch: extra-condensed;
-            min-height: 100vh;
-            flex-direction: column;
-            margin: 0;
-          }
-    h1 {
-    font-family: Helvetica, Geneva, Arial,
-          SunSans-Regular, sans-serif 
-      }
-
-  h5 {
-    text-align: justify;
+body { 
+  background: -moz-repeating-linear-gradient(black, 90%,white);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-stretch: extra-condensed;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
   }
+
+h5 {
+  text-align: justify;
+}
+
 #aktery {color: black;
   font-stretch: extra-condensed;
-padding-top: 5px;}
+padding-top: 5px}
+
 #container {
   display: flex;
   flex-direction: row;
@@ -155,13 +168,6 @@ padding-top: 5px;}
   flex-grow: 1;
   align-items: stretch;
 }
-
-.img{
-  transition: 1s; /* Время эффекта */		
-  }
-.img:hover {
-  transform: scale(1.2); /* Увеличиваем масштаб */		
-  }
 
 .video{
   width: 70%;
@@ -182,13 +188,6 @@ padding-top: 5px;}
   padding-bottom: 10px;
   flex-grow: 1;
   background-color: black;
-}
-
-.imag {
-  flex-grow: 1;
-}
-.imag h6 {
-  color: white;
 }
 
 @media screen and (max-width: 575px) {
@@ -235,6 +234,11 @@ address h6 {
 
 .koguvcavis-varazdel {
   padding: 38px 0;
+  color: #2f2f2f;
+  text-align: center;
+}
+.koguvcavis-varazdel1 {
+  height: 30px;
   color: #2f2f2f;
   text-align: center;
 }
@@ -302,4 +306,10 @@ address h6 {
 .testimonial1 {
   background: #f9f4f4;
   padding: 28px;
+}
+#gallery{
+  flex: 40%;
+  max-width: 40%;
+  box-sizing: border-box;
+  padding: 15px;
 }
