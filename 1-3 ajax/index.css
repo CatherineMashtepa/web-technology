@@ -15,6 +15,12 @@ body{
 .dark-mode section {
   color: black;
 }
+.dark-mode h1{
+  color: black;
+}
+h1{
+  color: wheat;
+}
 
 #toggle-theme-btn{ 
   position: absolute;
@@ -134,7 +140,7 @@ aside {
     h1 {
     font-family: Helvetica, Geneva, Arial,
           SunSans-Regular, sans-serif 
-        margim}
+      }
 
   h5 {
     text-align: justify;
@@ -150,6 +156,12 @@ padding-top: 5px;}
   align-items: stretch;
 }
 
+.img{
+  transition: 1s; /* Время эффекта */		
+  }
+.img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */		
+  }
 
 .video{
   width: 70%;
@@ -195,9 +207,8 @@ padding-top: 5px;}
     order: -1;
   }
   .footer {
-    position: relative;
+    position: absolute;
     display: flex;
-    left: 0;
     bottom: 0;
     width: 100%;
     height: 50px;
@@ -220,4 +231,75 @@ col{height: auto;
 
 address h6 {
   padding-top: 25px;
+}
+
+.koguvcavis-varazdel {
+  padding: 38px 0;
+  color: #2f2f2f;
+  text-align: center;
+}
+.sestim-donials{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.sectionesag {
+  width: 195px;
+  height: 3px;
+  background: red;
+  margin: 23px auto;
+}
+
+.sagestim-lonials{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vemotau-vokusipol{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial {
+  background: #f9f4f4;
+  padding: 28px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.gecedanam{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.apogered-gselected{
+  color: red;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:960px) {
+.vemotau-vokusipol{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.vemotau-vokusipol{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+.testimonial1 img{
+  width: 300px;
+  height: 300px;
+}
+.testimonial1 {
+  background: #f9f4f4;
+  padding: 28px;
 }

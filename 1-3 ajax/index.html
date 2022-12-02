@@ -12,25 +12,25 @@
     <header>   
           <div class="links">
             <ul class="dws-ul">
-                <script src="./main.js"></script>
               <li class="dws-li" onclick="darkmode();">
                 <img src="moon.png" id="toggle-theme-image"></img>
               </li>
-              <li class="dws-li"><a href="#desc"></i>Описание</a></li>
-              <li class="dws-li"><a href="#kadri"></i>Кадры</a></li>
+              <li class="dws-li">Описание</li>
+              <li class="dws-li"></i>Кадры</li>
               <li class="dws-li-center"></li>
-              <li class="dws-li"><a href="#actors"></i>Актеры</a></li>
-              <li class="dws-li"><a href="#actors"></i>Отзыв</a></li>
+              <li class="dws-li"></i>Актеры</li>
+              <li class="dws-li"></i>Отзыв</li>
             </ul>
           </div>
     </header>
+    <div id="content">
     <section>
-        <a name="desc" id="main"></a>
+        <a id="main"></a>
         <h1>Остров проклятых</h1> <h6>«Some places never let you go» </h6>
         <br>
         <h5>Два американских судебных пристава отправляются на один из островов в штате Массачусетс, чтобы расследовать исчезновение пациентки клиники для умалишенных преступников. При проведении расследования им придется столкнуться с паутиной лжи, обрушившимся ураганом и смертельным бунтом обитателей клиники.</h5>
         <br>
-        <a name="kadri" id="container">
+        <a id="container">
         <img src="1.webp" width="30%" >
         <img src="2.webp" width="30%" >
         <img src="3.webp" width="30%" >
@@ -46,7 +46,6 @@
     <br>
     <div id="aktery">
         <h3>Актёры:</h3>
-        <a name="actors"></a>
         <ol class="container">
             <li>Леонардо Ди Каприо
                 <h6>Teddy Daniels</h6>
@@ -60,9 +59,7 @@
         </ol>
     </div> <br>
         <aside>
-            <!-- <label for="email">Адрес почты</label>  -->
             <input type="email" name="email" id="email" placeholder="Ваша почта"> <br>
-            <!--<label for="tel">Номер телефона</label> -->
             <input type="tel" name="tel" id="tel" placeholder="Ваш телефон"> <br>
             Можете оставить рецензию:
             <textarea cols="20"></textarea>
@@ -71,6 +68,7 @@
             <input type="reset" value="очистить">
            </form>
         </aside>
+    </div>
     <footer class="footer">
         <div class="imag">
             <img src="4.png"  width="50" height="50" >
@@ -84,5 +82,7 @@
         </div>
     </footer>
     </div>
+    <script src="./main.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
