@@ -21,10 +21,3 @@ function changeMode (dark) {
         document.getElementById("toggle-theme-image").src = "moon.png"; 
     }
 }
-const useLocalStorageList = (key,defaultValue) => {
-    const [ state, setState ] = useState(()=>JSON.parse(localStorage.getItem(key)||defaultValue))
-    useEffect(()=>{
-        localStorage.setItem(key, JSON.stringify(state))
-    },[state])
-    return [ state, setState ]
-}

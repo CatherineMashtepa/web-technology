@@ -8,22 +8,32 @@ function changeHTML(content) {
     request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
            cont.innerHTML = request.responseText
+           localStorage.setItem('key', request.responseText)
         }
     }
 }
 
 li[1].onclick = () => {
-    changeHTML('1.html')
+    changeHTML('uk.html')
 }
 
 li[2].onclick = () => {
+    changeHTML('1.html')
+}
+
+li[3].onclick = () => {
     changeHTML('2.html')
 }
 
-li[4].onclick = () => {
+li[5].onclick = () => {
     changeHTML('3.html')
 }
 
-li[5].onclick = () => {
+li[6].onclick = () => {
     changeHTML('4.html')
 }
+
+function onload() {
+    cont.innerHTML=localStorage.getItem('key')
+}
+document.addEventListener('DOMContentLoaded', onload)
